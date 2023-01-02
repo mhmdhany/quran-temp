@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Quran Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Changa:wght@300;400;500;600&family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@200;300;400;600;700&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- scroll to top btn -->
+    <span class="scroll-btn">
+      <i class="fas fa-angle-double-up"></i>
+    </span>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h2>الموعظة</h2>
+        <ul class="links">
+          <li class="active" data-filter=".landing">الصفحة الرئيسية</li>
+          <li data-filter=".hadith">احاديث</li>
+          <li data-filter=".sorah">القرآن الكريم</li>
+          <li data-filter=".pray">اوقات الصلاة</li>
+          <li data-filter=".footer">تواصل معنا</li>
+        </ul>
+      </div>
+    </header>
+    <!-- Landing page -->
+    <section class="landing">
+      <div class="container">
+        <div class="landing-txt">
+          <h2>
+            مرحبا بك في
+            <br />
+            موقع الموعظة الإسلامي
+          </h2>
+          <button class="landing-btn">ابدأ التصفح</button>
+        </div>
+      </div>
+    </section>
+    <!-- Hadith Section -->
+    <section class="hadith">
+      <div class="container">
+        <h3>أحاديث</h3>
+        <div class="hadith-box"></div>
+        <div class="hadith-btns">
+          <span class="prev">السابق</span>
+          <span class="number">123</span>
+          <span class="next">التالي</span>
+        </div>
+      </div>
+    </section>
+    <!-- End Hadith Section -->
+
+    <!-- Sorah Section -->
+    <section class="sorah">
+      <div class="container">
+        <h3>القرآن الكريم</h3>
+        <div class="sorah-container"></div>
+      </div>
+    </section>
+    <!-- EndSorah Section -->
+
+    <!-- start Time Prayer -->
+    <section class="pray">
+      <h3>اوقات الصلاة</h3>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <div class="circle">
+              <svg>
+                <Circle cx="100" cy="100" r="100"></Circle>
+              </svg>
+              <div class="pray-time"></div>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Time Prayer -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#222541"
+          fill-opacity="1"
+          d="M0,128L48,144C96,160,192,192,288,181.3C384,171,480,117,576,101.3C672,85,768,107,864,117.3C960,128,1056,128,1152,154.7C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="icons">
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </section>
+
+    <!-- Sorahs Overlay -->
+    <div class="sorahs-overlay">
+      <button class="close">X</button>
+      <div class="ayahs-container"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
